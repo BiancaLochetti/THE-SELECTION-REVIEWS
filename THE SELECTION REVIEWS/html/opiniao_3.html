@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7212/7212801.png">
+    <title>The Selection Reviews</title>
+    <style>
+    
+    body, html {
+        background-image: linear-gradient(to right, #e9f5f2, #d0d2d3);
+    }
+
+    .container {
+       margin: 100px;
+       margin-top: 20px;
+    }
+
+    .principal {
+        display: flex;
+        align-items: center;
+        width: 1283px;
+        height: 300px;
+        padding: 30px;
+    }
+    
+    .principal img {
+        margin-right: 20px;
+        box-shadow: 2px 2px 4px 0 #08101f;
+    }
+
+    .opiniao {
+        margin-top: 50px;
+    }
+
+    .opiniao textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: vertical;
+    }
+
+    .opiniao label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .opiniao button {
+        padding: 10px 20px;
+        background-color: #a8a8a8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .opiniao button:hover {
+        background-color: #757575;
+    }
+    
+    .texto{
+        width: 850px;
+    }
+
+    </style>
+
+<script>
+    function abrir(){
+      alert("Avaliação enviada...")
+    }
+  </script>
+</head>
+<body>
+    
+    <div class="container">
+      <div class="principal">
+        <img src="https://m.media-amazon.com/images/I/51lnvNcEFbL._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="livro 3" width="187.5" height="262.5" style="float: left; margin-right: 45px;">
+        <div class="texto">
+            <p><b>A ESCOLHA</b> é o terceiro e último livro da trilogia original escrita por Kiera Cass. No desfecho da história, a competição finalmente chega ao fim e America é confrontada com a difícil decisão que definirá seu futuro e o destino de Illéa. Enfrentando pressões e desafios, ela terá que tomar escolhas difíceis que afetarão sua vida, seus relacionamentos e o futuro do país.</p>
+        </div>
+      </div>  
+      <div class="opiniao">
+        <form action="./livros.html" method="post">
+        <label for="opiniao">COMPARTILHE A SUA OPINIÃO:</label>
+        <textarea id="opiniao" name="opiniao" rows="4" cols="50"></textarea>
+        <button type="submit" value="Enviar" onclick="abrir()">Enviar</button>
+    </form>
+      </div>
+    </div>
+</body>
+</html>

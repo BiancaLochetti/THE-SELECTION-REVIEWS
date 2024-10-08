@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7212/7212801.png">
+    <title>The Selection Reviews</title>
+    <style>
+    
+    body, html {
+        background-image: linear-gradient(to right, #c98080, #d39292);
+    }
+
+    .container {
+       margin: 100px;
+       margin-top: 20px;
+    }
+
+    .principal {
+        display: flex;
+        align-items: center;
+        width: 1283px;
+        height: 300px;
+        padding: 30px;
+    }
+    
+    .principal img {
+        margin-right: 20px;
+        box-shadow: 2px 2px 4px 0 #08101f;
+    }
+
+    .opiniao {
+        margin-top: 50px;
+    }
+
+    .opiniao textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: vertical;
+    }
+
+    .opiniao label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .opiniao button {
+        padding: 10px 20px;
+        background-color: #af4c4c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .opiniao button:hover {
+        background-color: #a04b45;
+    }
+    
+    .texto{
+        width: 850px;
+    }
+
+    </style>
+
+<script>
+    function abrir(){
+      alert("Avaliação enviada...")
+    }
+  </script>
+</head>
+<body>
+    
+    <div class="container">
+      <div class="principal">
+        <img src="https://m.media-amazon.com/images/I/51egaVAWAbL._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="livro 2" width="187.5" height="262.5" style="float: left; margin-right: 45px;">
+        <div class="texto">
+            <p><b>A ELITE</b> é o segundo livro da série escrita por Kiera Cass. A história continua a acompanhar a protagonista, America Singer, na competição pelo trono. Agora, com apenas seis concorrentes restantes, America precisa enfrentar as intrigas e jogos políticos do palácio. Enquanto se debate entre seguir seu coração ou cumprir suas responsabilidades, segredos do passado e conflitos pessoais se intensificam, colocando em risco tanto seu amor quanto sua chance de conquistar a coroa.</p>    
+        </div>
+      </div>  
+      <div class="opiniao">
+        <form action="./livros.html" method="post">
+        <label for="opiniao">COMPARTILHE A SUA OPINIÃO:</label>
+        <textarea id="opiniao" name="opiniao" rows="4" cols="50"></textarea>
+        <button type="submit" value="Enviar" onclick="abrir()">Enviar</button>
+    </form>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7212/7212801.png">
+    <title>The Selection Reviews</title>
+    <style>
+    
+    body, html {
+        background-image: linear-gradient(to right, #9a95af, #ae92d3);
+    }
+
+    .container {
+       margin: 100px;
+       margin-top: 20px;
+    }
+
+    .principal {
+        display: flex;
+        align-items: center;
+        width: 1283px;
+        height: 300px;
+        padding: 30px;
+    }
+    
+    .principal img {
+        margin-right: 20px;
+        box-shadow: 2px 2px 4px 0 #08101f;
+    }
+
+    .opiniao {
+        margin-top: 50px;
+    }
+
+    .opiniao textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: vertical;
+    }
+
+    .opiniao label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .opiniao button {
+        padding: 10px 20px;
+        background-color: #664cafc9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .opiniao button:hover {
+        background-color: #5945a0de;
+    }
+    
+    .texto{
+        width: 850px;
+    }
+
+    </style>
+
+<script>
+    function abrir(){
+      alert("Avaliação enviada...")
+    }
+  </script>
+</head>
+<body>
+    
+    <div class="container">
+      <div class="principal">
+        <img src="https://m.media-amazon.com/images/I/51wkTHhwCUL._SY344_BO1,204,203,200_QL70_ML2_.jpg"  alt="livro 6" width="187.5" height="262.5" style="float: left; margin-right: 45px;">
+        <div class="texto">
+            <p><b>FELIZES PARA SEMPRE</b> é um livro adicional da série "A Seleção" escrito por Kiera Cass. Nele, os leitores são convidados a explorar o mundo de Illéa em profundidade e a reviver momentos importantes ao lado dos personagens adorados da série. O livro apresenta contos que abrangem eventos significativos, como o aniversário de Maxon, o nascimento de Eadlyn e outros acontecimentos que ocorreram antes, durante e depois dos livros principais. Essas histórias extras fornecem uma perspectiva ampliada e enriquecedora, permitindo que os fãs se aprofundem ainda mais no universo cativante criado por Kiera Cass.</p>    
+        </div>
+      </div>  
+      <div class="opiniao">
+        <form action="./livros.html" method="post">
+        <label for="opiniao">COMPARTILHE A SUA OPINIÃO:</label>
+        <textarea id="opiniao" name="opiniao" rows="4" cols="50"></textarea>
+        <button type="submit" value="Enviar" onclick="abrir()">Enviar</button>
+    </form>
+      </div>
+    </div>
+</body>
+</html>
